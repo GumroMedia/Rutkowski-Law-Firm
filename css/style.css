@@ -1,8 +1,12 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
     background: #c3b9a9;
     background-image: url(../images/PaperBackground.jpg);
     font-family: 'Open Sans', sans-serif;
-    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .coffee {
@@ -12,7 +16,7 @@ body {
     width: 286px;
     height: 300px;
     margin-left: 100px;
-    padding: 50px;
+    padding: 0 50px;
     display: block;
 }
 
@@ -36,7 +40,7 @@ body {
 .paper-bottom {
   border-top: 1px solid #333;
   border-bottom: 1px solid #333;
-  margin: 40px 40px 0 40px;
+  margin: 10px 40px 0 40px;
   padding: 0;
 }
 .paper-bottom-text {
@@ -64,10 +68,6 @@ body {
 }
 
 .paper {
-/*
-    background-image: url(../images/Paper.png);
-    background-repeat: repeat-y;
-*/
     position: relative;
     background-color: #e4e4e4;
     width: 690px;
@@ -195,14 +195,14 @@ body {
 }
 
 .seal {
-    background-image: url(../images/Seal.png);
+    background-image: url(../images/Seal2.png);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
     background-size: cover;
-    width: 500px;
+    width: 497px;
     height: 195px;
     margin-top: 40px;
-    margin-left: -50px;
+    margin-left: 20px;
 }
 
 .glasses {
@@ -236,25 +236,24 @@ body {
     width: 413px;
     height: 650px;
     margin-top: 60px;
-    margin-left: 0px;
+    margin-left: 20px;
+    position: relative;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
 }
 
 .padtext {
-    padding: 108px 20px 0px 65px;
+    padding: 108px 40px 0 50px;
     font-family: 'Gloria Hallelujah', cursive;
     color: #222;
 }
 
 .padtext h4 {
     margin-bottom: 0px;
+    margin-left: 20px;
 }
-.padtext h4 a {
-    color: #222;
-}
-.padtext h4 a:hover {
-    text-decoration: none;
-    color: cornflowerblue;
-}
+
 .padtext ul {
     padding-left: 20px;
     margin-bottom: 17px;
@@ -264,6 +263,8 @@ body {
     line-height: 1.43;
     list-style: none;
 }
+.padtext li:before{ content:"-"; position:relative; left:-5px;}
+.padtext li{ text-indent:-5px; }
 
 .modal-open .modal,.btn:focus{
     outline:none!important;
@@ -293,4 +294,87 @@ body {
 .roboto {
     font-family: 'roboto';
     font-weight: 500;
+}
+
+.flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    }
+
+.flex-item {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    }
+
+.left-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    }
+
+@media (max-width: 1470px) {
+  .flex-item:nth-child(1) {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .left-container {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .card01stack{
+    margin-top: 0;
+  }
+  .legalpad {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .stamp {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .paper {
+    width: 500px;
+  }
+  .paperText {
+    padding: 30px;
+  }
+  .clip2 {
+    margin-left: 25%;
+  }
 }
