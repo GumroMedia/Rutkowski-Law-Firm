@@ -33,23 +33,35 @@ body {
     margin-left: 53%;
 }
 
-.paperBottom {
-    background-image: url(../images/PaperBottom.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 700px;
-    height: 171px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -10px;
-    z-index: -10;
-}
-
 .paper-bottom {
-    background-color: pink;
-    padding: 20px 50px;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  margin: 40px 40px 0 40px;
+  padding: 0;
 }
-
+.paper-bottom-text {
+  font-size: 10px;
+  font-family: 'roboto';
+  display: block;
+  padding: 0;
+  height: 100%;
+}
+.paper-bottom-text p {
+  padding: 0;
+  margin: 5px;
+}
+.paper-bottom-text:before {
+  background-image: url(../images/RLF_Logo_OnlyLion.svg);
+  background-repeat: no-repeat;
+  background-size: 35px auto;
+  content: "";
+  width: 45px;
+  height: 40px;
+  display: block;
+  float: left;
+  margin: 0 15px;
+  border-right: 1px solid #333;
+}
 
 .paper {
 /*
@@ -61,6 +73,7 @@ body {
     width: 690px;
     height: auto;
     margin: 60px auto 0 auto;
+    padding-bottom: 40px;
     z-index: -11;
     -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.5);
@@ -78,12 +91,6 @@ body {
     font-style: italic;
 }
 
-.paperFooter p {
-    padding-top: 60px;
-    padding-left: 120px;
-    font-size: 10px;
-    font-family: 'roboto';
-}
 .card-photo {
     max-width: 30%;
     margin-right: 2em;
