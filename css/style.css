@@ -383,21 +383,32 @@ body {
   }
   .paperTop {
     margin-top: -60px;
+    width: 480px;
   }
   .clip1 {
     height: 80px;
     width: 80px;
-    margin-left: 5%;
+    position: absolute;
+    left: 15%;
+    margin-left: 0;
   }
   .clip2 {
     height: 80px;
     width: 80px;
-    margin-left: 15%;
-  }
-  .legalpad {
-    width: 320px;
+    position: absolute;
+    left: 65%;
+    margin-left: 0;
   }
   .padtext {
-    padding: 108px 15px 0 15px;
+    padding: 108px 25px 0 38px;
+  }
+}
+
+@media (max-width: 400px) {
+  .clip1 {
+    left: 10%;
+  }
+  .clip2 {
+    left: 45%;
   }
 }
