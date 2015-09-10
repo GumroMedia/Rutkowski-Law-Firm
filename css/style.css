@@ -373,3 +373,31 @@ body {
     margin-left: 25%;
   }
 }
+
+@media (max-width: 480px) {
+  .paper {
+    width: auto;
+  }
+  .paper-bottom-text:before {
+    display: none;
+  }
+  .paperTop {
+    margin-top: -60px;
+  }
+  .clip1 {
+    height: 80px;
+    width: 80px;
+    margin-left: 5%;
+  }
+  .clip2 {
+    height: 80px;
+    width: 80px;
+    margin-left: 15%;
+  }
+  .legalpad {
+    width: 320px;
+  }
+  .padtext {
+    padding: 108px 15px 0 15px;
+  }
+}
