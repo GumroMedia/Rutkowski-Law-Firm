@@ -193,6 +193,7 @@ body {
 .cardstack:focus {
   pointer-events: none;
   outline: none;
+  padding-left: 0;
 }
 
 .cardstack:focus .cardstack-content {
