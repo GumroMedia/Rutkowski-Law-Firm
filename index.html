@@ -1,266 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <meta name="description" content="A full service law firm dedicated to providing superior legal services. Based in Rochester, Michigan, our firm represents individuals, families and businesses throughout South East Michigan." />
-    <meta name="keywords" content="Child advocacy, Child law, Children’s rights, support, custody, top law firms, estate planning, will, trust, attorney, rochester michigan, business, employment">
-    <meta property="og:image" content="http://rutkowskilawfirm.com/images/og.jpg">
-    <title>The Rutkowski Law Firm</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta name="description" content="A full service law firm dedicated to providing superior legal services. Based in Rochester, Michigan, our firm represents individuals, families and businesses throughout South East Michigan." />
+  <meta name="keywords" content="Child advocacy, Child law, Children’s rights, support, custody, top law firms, estate planning, will, trust, attorney, rochester michigan, business, employment">
+  <meta property="og:image" content="http://rutkowskilawfirm.com/images/og.jpg">
+  <title>The Rutkowski Law Firm</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <!-- Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+  <script>
+      function initialize() {
+          var myLatlng = new google.maps.LatLng(42.682112, -83.146115);
+          var mapOptions = {
+              zoom: 12,
+              center: myLatlng
+          }
+          var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+          var marker = new google.maps.Marker({
+              position: myLatlng,
+              map: map,
+              title: 'Our Office'
+          });
 
-    <script>
-        function initialize() {
-            var myLatlng = new google.maps.LatLng(42.682112, -83.146115);
-            var mapOptions = {
-                zoom: 12,
-                center: myLatlng
-            }
-            var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+          $('#contact-modal').on('shown.bs.modal', function () {
+              initialize();
+          });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
 
-            var marker = new google.maps.Marker({
-                position: myLatlng,
-                map: map,
-                title: 'Our Office'
-            });
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
-            $('#contact-modal').on('shown.bs.modal', function () {
-                initialize();
-            });
-        }
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-        <!-- Google Analytics -->
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-56757932-1', 'auto');
-          ga('send', 'pageview');
-        </script>
-        <script src="//my.hellobar.com/8cbd6d5744a93df834b22e0e789000543f52ed67.js" type="text/javascript" charset="utf-8" async="async"></script>
-    </head>
-    <body>
+    ga('create', 'UA-56757932-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body>
 <h1 class="text-hide">Rutkowski Law Firm</h1>
-        <div class="flex-container">
-                <div class="flex-item left-container">
-
+  <div class="flex-container">
+    <div class="flex-item left-container">
 <!-- business card 1 -->
 
-                    <div class="card01stack">
-                        <a id="modal-card01" href="#modal-container-card01" role="button" class="btn" data-toggle="modal"><div id="card1" class="card card01"></div></a>
-                    </div>
-                    <div class="modal fade" id="modal-container-card01" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                    <h4 class="modal-title" id="myModalLabel">
-                                        Background - Michael L. Rutkowski
-                                    </h4>
-                                </div>
-                                <div class="modal-body">
-                                    <img src="images/michael_bw.png" alt="Michael L Rutkowski" class="thumbnail img-responsive pull-left card-photo">
-                                    <p>Mike understands the business of business.  Working with corporate clients, Mike handles matters ranging from business formation, negotiation, and drafting and reviewing contracts to Workers’ Compensation &amp; Employment Law issues.  Mike earned a Bachelor in Business Administration with a major in Sales and Business Marketing from Western Michigan University’s Haworth College of Business.  He then took on the challenge of obtaining his Juris Doctor with a concentration in Business Transactions through Thomas M. Cooley Law School’s accelerated two-year program.  During his studies, Mike also worked as a small business owner, handling the day-to-day operations of his online sales business.  An entrepreneur by nature, Mike took his love of golf and launched the eBay Store “Fore_Golf_Sales,” where he developed vendor relationships for purchasing inventory and provided prompt delivery and superior customer service.  Mike was able to use his business knowledge and experience to build a favorable online sales reputation and drive profits for his store. </p>
-                                    <p>As an attorney and business advisor, Mike provides personalized counsel based on each client’s needs and recognizes that many individuals seek guidance going beyond the simple, immediate legal issues a business client faces.  For this reason, Mike consistently seeks out avenues to broaden his skill set.  His extensive experience in assisting individual clients with Estate Planning &amp; Probate needs is prime example of the tailored services Mike provides his clients.  He is active with the State Bar of Michigan’s Estate Planning and Probate Section and dedicates his time as an Outreach Committee Member of this Section.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="stack">
+        <a id="modal-card01" href="#modal-mike" role="button" data-toggle="modal"><div id="card1" class="card card01"></div></a>
+      </div>
 
-<!-- business card 2 -->
+<!-- business card stack 1 -->
 
-                    <!-- <div class="card02stack">
-                        <a id="modal-card02" href="#modal-container-card02" role="button" class="btn" data-toggle="modal"><div id="card2" class="card card02"></div></a>
-                    </div>
-                    <div class="modal fade" id="modal-container-card02" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                    <h4 class="modal-title" id="myModalLabel">
-                                        Anisha D. Rutkowski
-                                    </h4>
-                                </div>
-                                <div class="modal-body">
-                                    <img src="images/Anisha_BW.png" alt="Anita D. Rutkowski" class="thumbnail img-responsive pull-left card-photo">
-                                    <p>Anisha is a graduate of Western Michigan University, where she studied Business Administration.  After her undergraduate studies, Anisha received an honors scholarship to attend the Thomas M. Cooley Law School.  She was ranked in the top 5% of her class throughout her time in law school and served as an Editor on the school’s Law Review.  Anisha balanced law school with gaining experience as a judicial intern for the Honorable Gerald E. Rosen in the United States District Court for the Eastern District of Michigan and the Honorable Michael Warren in the Oakland County Circuit Court.  Anisha graduated Magna Cum Laude and was awarded the Distinguished Student Award for her graduating class.</p>
-                                    <p>Before working as an Associate Attorney, handling both civil and criminal litigation matters, Anisha spent five years working for the State of Michigan; first, as a prehearing attorney for the Michigan Court of Appeals and, more recently, completing two judicial clerkships with the Michigan Supreme Court. Anisha has also served as an adjunct professor at the Thomas M. Cooley Law School, where she instructed law students on advanced legal research and writing methods.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+      <figure id="stack01" class="stack stack-randomrot">
+        <img src="images/Card_Attorneys.svg" class="card top-card" alt="Attorneys"/>
+        <img src="images/Card_Anisha.svg" class="card card-modal-anisha" alt="Attorneys Card"/>
+        <img src="images/Card_Juliana.svg" class="card card-modal-juliana" alt="Attorneys Card"/>
+      </figure>
 
-                    <figure id="stack01" class="stack stack-randomrot">
-                    	<img src="images/Card02.png" alt="img01"/>
-                      <img src="images/Card02.png" alt="img02"/>
-                      <img src="images/Card02.png" alt="img03"/>
-                    </figure>
+<!-- business card stack 2 -->
 
-<!-- business card 3 -->
+      <figure id="stack02" class="stack stack-randomrot">
+        <img src="images/Card_Staff.svg" class="card top-card" alt="Staff"/>
+      	<img src="images/Card_Nichoal.svg" class="card card-modal-nichoal" alt="Staff Card"/>
+        <img src="images/Card_Laura.svg" class="card card-modal-laura" alt="Staff Card"/>
+        <img src="images/Card_Jacqueline.svg" class="card card-modal-jacqueline" alt="Staff Card"/>
+      </figure>
 
-                    <!-- <div tabindex="0" id="card3" class="cardstack">
-                      <ul class="cardstack-content">
-                        <li><a id="modal-card04" href="#modal-container-card02" role="button" class="btn" data-toggle="modal"><div id="card4" class="card card01"></div></a></li>
-                        <li><a id="modal-card05" href="#modal-container-card02" role="button" class="btn" data-toggle="modal"><div id="card5" class="card card01"></div></a></li>
-                        <li><a id="modal-card06" href="#modal-container-card02" role="button" class="btn" data-toggle="modal"><div id="card2" class="card card01"></div></a></li>
-                      </ul>
-                    </div> -->
 
-                    <figure id="stack02" class="stack stack-randomrot">
-                    	<img src="images/Card02.png" alt="img01"/>
-                      <img src="images/Card02.png" alt="img02"/>
-                      <img src="images/Card02.png" alt="img03"/>
-                      <img src="images/Card02.png" alt="img03"/>
-                    </figure>
+<!-- ALL THE MODALS -->
+<!-- mike modal -->
+<div class="modal fade" id="modal-mike" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Background - Michael L. Rutkowski
+                </h4>
+            </div>
+            <div class="modal-body">
+                <img src="images/michael_bw.png" alt="Michael L Rutkowski" class="thumbnail img-responsive pull-left card-photo">
+                <p>Mike understands the business of business.  Working with corporate clients, Mike handles matters ranging from business formation, negotiation, and drafting and reviewing contracts to Workers’ Compensation &amp; Employment Law issues.  Mike earned a Bachelor in Business Administration with a major in Sales and Business Marketing from Western Michigan University’s Haworth College of Business.  He then took on the challenge of obtaining his Juris Doctor with a concentration in Business Transactions through Thomas M. Cooley Law School’s accelerated two-year program.  During his studies, Mike also worked as a small business owner, handling the day-to-day operations of his online sales business.  An entrepreneur by nature, Mike took his love of golf and launched the eBay Store “Fore_Golf_Sales,” where he developed vendor relationships for purchasing inventory and provided prompt delivery and superior customer service.  Mike was able to use his business knowledge and experience to build a favorable online sales reputation and drive profits for his store. </p>
+                <p>As an attorney and business advisor, Mike provides personalized counsel based on each client’s needs and recognizes that many individuals seek guidance going beyond the simple, immediate legal issues a business client faces.  For this reason, Mike consistently seeks out avenues to broaden his skill set.  His extensive experience in assisting individual clients with Estate Planning &amp; Probate needs is prime example of the tailored services Mike provides his clients.  He is active with the State Bar of Michigan’s Estate Planning and Probate Section and dedicates his time as an Outreach Committee Member of this Section.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- anisha modal -->
+<div class="modal fade" id="modal-anisha" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Background - Anisha D. Rutkowski
+                </h4>
+            </div>
+            <div class="modal-body">
+                <img src="images/anisha_bw.png" alt="Anisha D Rutkowski" class="thumbnail img-responsive pull-left card-photo">
+                <p>Anisha is a graduate of Western Michigan University, where she studied Business Administration. After her undergraduate studies, Anisha received an honors scholarship to attend the Thomas M. Cooley Law School. She was ranked in the top 5% of her class throughout her time in law school and served as an Editor on the school’s Law Review. Anisha balanced law school with gaining experience as a judicial intern for the Honorable Gerald E. Rosen in the United States District Court for the Eastern District of Michigan and the Honorable Michael Warren in the Oakland County Circuit Court. Anisha graduated Magna Cum Laude and was awarded the Distinguished Student Award for her graduating class.</p>
+
+                <p>Before working as an Associate Attorney, handling both civil and criminal litigation matters, Anisha spent five years working for the State of Michigan; first, as a prehearing attorney for the Michigan Court of Appeals and, more recently, completing two judicial clerkships with the Michigan Supreme Court. Anisha has also served as an adjunct professor at the Thomas M. Cooley Law School, where she instructed law students on advanced legal research and writing methods.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- juliana modal -->
+<div class="modal fade" id="modal-juliana" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Background - Juliana B. Khalifeh
+                </h4>
+            </div>
+            <div class="modal-body">
+                <p>Coming Soon.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- nichoal modal -->
+<div class="modal fade" id="modal-nichoal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Background - Nichoal Devereaux
+                </h4>
+            </div>
+            <div class="modal-body">
+              <img src="images/nichoal_bw.png" alt="Nichoal Devereax" class="thumbnail img-responsive pull-left card-photo">
+              <p>Nichoal Devereaux achieved her Associates Degree in Applied Science of Paralegal Studies from Oakland Community College, where she maintained Dean’s List status with a 3.96 GPA throughout the program, and graduated Summa Cum Laude. Nichoal balanced her studies while gaining experience as a paralegal and legal assistant at a fast paced civil and criminal litigation firm.</p>
+
+              <p>Since joining the Rutkowski Law Firm, Nichoal has assisted in various legal matters including; Estate Planning, Probate, Business Law, Limited Liability Companies, and Employment law.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- laura modal -->
+<div class="modal fade" id="modal-laura" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Background - Laura Kingston
+                </h4>
+            </div>
+            <div class="modal-body">
+              <img src="images/laura_bw.png" alt="Laura Kingston" class="thumbnail img-responsive pull-left card-photo">
+              <div class="clearfix"></div>
+              <p>Coming Soon.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- jacklyn modal -->
+<div class="modal fade" id="modal-jacqueline" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Background - Jacqueline Yee
+                </h4>
+            </div>
+            <div class="modal-body">
+              <img src="images/jacqueline_bw.png" alt="Jacqueline Yee" class="thumbnail img-responsive pull-left card-photo">
+              <div class="clearfix"></div>
+              <p>Coming Soon.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- iphone -->
 
-                    <a id="modal-847850" href="#contact-modal" role="button" class="btn" data-toggle="modal">
-                        <div id="phone" class="phone">
-                            <div class="phone-text">
-                                <h4>Contact Us</h4>
-                                <p class="phone-label">Phone:</p>
-                                <p class="phone-details">(248) 792 - 9193</p>
-                                <p class="phone-label">Email:</p>
-                                <p class="phone-details">info@rutkowskilawfirm.com</p>
-                                <p class="phone-label">Address:</p>
-                                <p class="phone-details">1000 W. University Drive<br>Suite 150<br>Rochester, MI 48307</p>
-                                <p class="phone-label">Fax:</p>
-                                <p class="phone-details">(248) 750 - 0793</p>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="modal fade" id="contact-modal">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                    <h4 class="modal-title" id="myModalLabel">Contact Information</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="well">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <p class="text-primary">Phone:</p>
-                                                <p>(248) 792 - 9193</p>
-                                                <p class="text-primary">Fax:</p>
-                                                <p>(248) 750 - 0793</p>
-                                                <p class="text-primary">Email:</p>
-                                                <p><a href="mailto:info@rutkowskilawfirm.com?Subject=Hello" target="_top">info@rutkowskilawfirm.com</a></p>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p class="text-primary">Address:</p>
-                                                <p>1000 W. University Drive<br>Suite 150<br>Rochester, MI 48307</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="map-canvas"></div>
-                                </div>
-                                <div class="modal-footer">
-                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <a id="modal-847850" href="#contact-modal" role="button" class="btn" data-toggle="modal">
+          <div id="phone" class="phone">
+              <div class="phone-text">
+                  <h4>Contact Us</h4>
+                  <p class="phone-label">Phone:</p>
+                  <p class="phone-details">(248) 792 - 9193</p>
+                  <p class="phone-label">Email:</p>
+                  <p class="phone-details">info@rutkowskilawfirm.com</p>
+                  <p class="phone-label">Address:</p>
+                  <p class="phone-details">1000 W. University Drive<br>Suite 150<br>Rochester, MI 48307</p>
+                  <p class="phone-label">Fax:</p>
+                  <p class="phone-details">(248) 750 - 0793</p>
+              </div>
+          </div>
+      </a>
+      <div class="modal fade" id="contact-modal">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                      <h4 class="modal-title" id="myModalLabel">Contact Information</h4>
+                  </div>
+                  <div class="modal-body">
+                      <div class="well">
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <p class="text-primary">Phone:</p>
+                                  <p>(248) 792 - 9193</p>
+                                  <p class="text-primary">Fax:</p>
+                                  <p>(248) 750 - 0793</p>
+                                  <p class="text-primary">Email:</p>
+                                  <p><a href="mailto:info@rutkowskilawfirm.com?Subject=Hello" target="_top">info@rutkowskilawfirm.com</a></p>
+                              </div>
+                              <div class="col-md-6">
+                                  <p class="text-primary">Address:</p>
+                                  <p>1000 W. University Drive<br>Suite 150<br>Rochester, MI 48307</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div id="map-canvas"></div>
+                  </div>
+                  <div class="modal-footer">
+                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
 
 <!-- MIDDLE COLUMN - paper -->
 
 <!-- paper -->
-            <div class="flex-item">
-                <div class="paper">
-                    <div class="paperTop">
-                        <img class="clip1" src="images/Clip1.png" alt="clip" />
-                        <img class="clip2" src="images/Clip2.png" alt="clip" />
-                    </div>
-                    <div class="paperText">
-                        <img src="images/RLF_Lion_Logo.svg" alt="Rutkowski Law Firm" style="width: 116%; margin: 0 -8%; opacity: 0.75;" />
-                        <p>The Rutkowski Law Firm is a full service law firm, dedicated to providing superior legal services. Based in Rochester, Michigan, our firm represents individuals, families and businesses throughout South East Michigan. Our practice is focused on employment law, real estate, business/corporate transactions and estate planning, and we are committed to assisting clients in acheiving their personal and business goals. The Rutkowski Law Firm team dedicates itself to listening to clients' needs and providing clear, prompt, and reliable communication in return. While serving our clients with exceptional legal representation, our firm strives to provide such representation at reasonable fees.</p>
+    <div class="flex-item">
+      <div class="paper">
+        <div class="paperTop">
+          <img class="clip1" src="images/Clip1.png" alt="clip" />
+          <img class="clip2" src="images/Clip2.png" alt="clip" />
+        </div>
+        <div class="paperText">
+          <img src="images/RLF_Lion_Logo.svg" alt="Rutkowski Law Firm" style="width: 116%; margin: 0 -8%; opacity: 0.75;" />
+          <p>The Rutkowski Law Firm is a full service law firm, dedicated to providing superior legal services. Based in Rochester, Michigan, our firm represents individuals, families and businesses throughout South East Michigan. Our practice is focused on employment law, real estate, business/corporate transactions and estate planning, and we are committed to assisting clients in acheiving their personal and business goals. The Rutkowski Law Firm team dedicates itself to listening to clients' needs and providing clear, prompt, and reliable communication in return. While serving our clients with exceptional legal representation, our firm strives to provide such representation at reasonable fees.</p>
 
-                        <h4>A Comprehensive Practice</h4>
+          <h4>A Comprehensive Practice</h4>
 
-                        <p><span class="roboto">Real Estate</span> — The Rutkowski Law Firm practices in various aspects of commercial real estate law, including purchasing, selling, financing, developing, syndicating, zoning, leasing and exchanging real property. Our firm is experienced in project planning, entity structure and formation, real estate taxation, construction and development, management, commercial leasing, subdivision and title matters.</p>
+          <p><span class="roboto">Real Estate</span> — The Rutkowski Law Firm practices in various aspects of commercial real estate law, including purchasing, selling, financing, developing, syndicating, zoning, leasing and exchanging real property. Our firm is experienced in project planning, entity structure and formation, real estate taxation, construction and development, management, commercial leasing, subdivision and title matters.</p>
 
-                        <p><span class="roboto">Estate Planning</span> — The Rutkowski Law Firm offers superior estate planning services that include a complete analysis of each client's financial position and desires, preparation or review of wills, living trusts, irrevocable trusts, general and healthcare powers of attorney, family limited partnerships, trust estate and probate fiduciary accounting, tax planning and compliance and related income, estate and gift tax planning.</p>
+          <p><span class="roboto">Estate Planning</span> — The Rutkowski Law Firm offers superior estate planning services that include a complete analysis of each client's financial position and desires, preparation or review of wills, living trusts, irrevocable trusts, general and healthcare powers of attorney, family limited partnerships, trust estate and probate fiduciary accounting, tax planning and compliance and related income, estate and gift tax planning.</p>
 
-                        <p><span class="roboto">Employment Law</span> — The Rutkowski Law Firm offers years of experience in workers’ compensation and employment law, including wage disputes, unemployment, contract negotiation and various other areas for both businesses and individuals.</p>
+          <p><span class="roboto">Employment Law</span> — The Rutkowski Law Firm offers years of experience in workers’ compensation and employment law, including wage disputes, unemployment, contract negotiation and various other areas for both businesses and individuals.</p>
 
-                        <p><span class="roboto">Business and Corporate</span> — The Rutkowski Law Firm's business law practice includes representation and guidance for business start-ups; corporate, partnership and limited liability company (LLC) formations; asset and stock sales and purchases; mergers, acquisitions, reorganizations, recapitalizations and dissolutions; asset protection and preservation planning; contract drafting and negotiation. Our firm handles sophisticated business planning, negotiation, contract preparation and general counseling for clients in a variety of industries.</p>
-                    </div>
-                    <img src="images/signature.png" alt="signature" style="margin-left: auto; display: block;"/>
-                    <div class="paper-bottom">
-                        <div class="paper-bottom-text">
-                          <p><strong>Phone:</strong> (248)  792 - 9193 &nbsp; | &nbsp; <strong>Fax:</strong> (248) 750 - 0793<br/>1000 W. University Drive, Suite 150<br/>Rochester, MI 48307</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <p><span class="roboto">Business and Corporate</span> — The Rutkowski Law Firm's business law practice includes representation and guidance for business start-ups; corporate, partnership and limited liability company (LLC) formations; asset and stock sales and purchases; mergers, acquisitions, reorganizations, recapitalizations and dissolutions; asset protection and preservation planning; contract drafting and negotiation. Our firm handles sophisticated business planning, negotiation, contract preparation and general counseling for clients in a variety of industries.</p>
+        </div>
+        <img src="images/signature.png" alt="signature" style="margin-left: auto; display: block;"/>
+        <div class="paper-bottom">
+          <div class="paper-bottom-text">
+            <p><strong>Phone:</strong> (248)  792 - 9193 &nbsp; | &nbsp; <strong>Fax:</strong> (248) 750 - 0793<br/>1000 W. University Drive, Suite 150<br/>Rochester, MI 48307</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 <!-- RIGHT COLUMN - pad, seal, stamp -->
 
-            <div class="flex-item">
+      <div class="flex-item">
 
 <!-- legal pad -->
 
-                <div class="legalpad">
-                    <div class="padtext">
-                        <h4>Areas of Practice</h4>
-                        <ul>
-                            <li>Child Advocacy &amp; Children's rights</li>
-                            <li>Child Law, Custody &amp; Support</li>
-                            <li>Family Law</li>
-                            <li>Estate Planning, Administration &amp; Probate</li>
-                            <li>Employment Law &amp; Workers’ Compensation</li>
-                            <li>Business Formation, Dissolution &amp; Succession Planning</li>
-                            <li>Business Transactions &amp; Litigation</li>
-                            <li>Residential &amp; Commercial Real Estate</li>
-                            <li>Contract Review, Negotiation, Drafting Litigation</li>
-                            <li>Transportation Law</li>
-                            <li>Landlord &amp; Tenant</li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="legalpad">
+              <div class="padtext">
+                  <h4>Areas of Practice</h4>
+                  <ul>
+                      <li>Child Advocacy &amp; Children's rights</li>
+                      <li>Child Law, Custody &amp; Support</li>
+                      <li>Family Law</li>
+                      <li>Estate Planning, Administration &amp; Probate</li>
+                      <li>Employment Law &amp; Workers’ Compensation</li>
+                      <li>Business Formation, Dissolution &amp; Succession Planning</li>
+                      <li>Business Transactions &amp; Litigation</li>
+                      <li>Residential &amp; Commercial Real Estate</li>
+                      <li>Contract Review, Negotiation, Drafting Litigation</li>
+                      <li>Transportation Law</li>
+                      <li>Landlord &amp; Tenant</li>
+                  </ul>
+              </div>
+          </div>
 
 <!-- seal -->
 
-                <div class="seal"></div>
+          <div class="seal"></div>
 
 <!-- stamp -->
 
-                <div class="stamp"></div>
+          <div class="stamp"></div>
 
 <!-- blog -->
-                <a href="http://rutkowskilawfirm.com/blog/"><div class="coffee"></div></a>
-            </div>
-
-        </div>
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/animate.js"></script>
-    <script src="//my.hellobar.com/8cbd6d5744a93df834b22e0e789000543f52ed67.js" type="text/javascript" charset="utf-8" async="async"></script>
-    </body>
+          <a href="http://rutkowskilawfirm.com/blog/"><div class="coffee"></div></a>
+      </div>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/animate.js"></script>
+  <script src="//my.hellobar.com/8cbd6d5744a93df834b22e0e789000543f52ed67.js" type="text/javascript" charset="utf-8" async="async"></script>
+</body>
 </html>

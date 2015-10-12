@@ -16,11 +16,6 @@ function animationHover(element, animationup, animationdown){
 };
 
 animationHover('#card1', 'pulseup', 'pulsedown');
-animationHover('#card2', 'pulseup', 'pulsedown');
-animationHover('#card3', 'pulseup', 'pulsedown');
-animationHover('#card4', 'pulseup', 'pulsedown');
-animationHover('#card5', 'pulseup', 'pulsedown');
-
 
 function animationHover2(element, animation){
   element = $(element);
@@ -45,4 +40,24 @@ $("figure.stack").hover(function(){
 
 $("figure.stack").click(function(){
   $(this).toggleClass("active");
+});
+
+$(".card-modal-anisha").click(function(){
+  $('#modal-anisha').modal('show');
+});
+
+$(".card-modal-juliana").click(function(){
+  $('#modal-juliana').modal('show');
+});
+
+$(".card-modal-nichoal").click(function(){
+  $('#modal-nichoal').modal('show');
+});
+
+$(".card-modal-laura").click(function(){
+  $('#modal-laura').modal('show');
+});
+
+$(".card-modal-jacqueline").click(function(){
+  $('#modal-jacqueline').modal('show');
 });
