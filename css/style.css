@@ -113,21 +113,26 @@ body {
 .card01{
     background-image: url(../images/Card01.svg);
 }
+.card02{
+    background-image: url(../images/Card02.png);
+}
+.card03{
+    background-image: url(../images/Card03.png);
+}
+.card04{
+    background-image: url(../images/Card04.png);
+}
 
 .card01stack{
-    background-image: url(../images/Card01stack.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 320px;
     height: 211px;
     margin-top: 50px;
-    z-index: 10;
 }
 
-.card02{
-    background-image: url(../images/Card02.png);
-}
+
 
 .card02stack{
     background-image: url(../images/Card02Stack.png);
@@ -139,15 +144,6 @@ body {
     z-index: 10;
 }
 
-.card03{
-    background-image: url(../images/Card03.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 189px;
-    z-index: 10;
-}
 
 .card03stack{
     background-image: url(../images/Card03Stack.png);
@@ -209,6 +205,76 @@ body {
   transition: visibility 0.5s;
   transition: 0.5s;
 }
+
+
+
+
+
+
+
+.stack {
+	margin: 20px auto;
+	width: 300px;
+	padding: 0;
+	position: relative;
+	max-width: 100%;
+  z-index: 12;
+}
+
+.stack img {
+	max-width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 0.3s;
+}
+
+.stack img:last-child {
+	position: relative;
+}
+
+.stack-randomrot.hover img:first-child {
+	-webkit-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+
+.stack-randomrot.hover img:nth-child(2) {
+	-webkit-transform: rotate(10deg);
+	transform: rotate(10deg);
+}
+
+.stack-randomrot.hover img:last-child {
+  -webkit-transform: rotate(20deg);
+	transform: rotate(20deg);
+}
+
+.stack-randomrot.hover img:nth-child(3) {
+	-webkit-transform: translate(15px,15px);
+	transform: translate(15px,15px);
+}
+
+.stack-randomrot.active img:nth-child(2) {
+  -webkit-transform: translate(100%,0px);
+	transform: translate(100%,0px);
+  pointer-events: none;
+}
+
+.stack-randomrot.active img:nth-child(3) {
+  -webkit-transform: translate(200%,0px);
+	transform: translate(200%,0px);
+  pointer-events: none;
+}
+
+.stack-randomrot.active img:nth-child(4) {
+  -webkit-transform: translate(300%,0px);
+	transform: translate(300%,0px);
+  pointer-events: none;
+}
+
+
+
+
+
 
 .phone {
     background-image: url(../images/iPhone.png);

@@ -38,3 +38,11 @@ function animationHover2(element, animation){
 };
 
 animationHover2('#phone', 'shake');
+
+$("figure.stack").hover(function(){
+  $(this).toggleClass("hover");
+});
+
+$("figure.stack").click(function(){
+  $(this).toggleClass("active");
+});
