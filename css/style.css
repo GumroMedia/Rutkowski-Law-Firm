@@ -124,6 +124,7 @@ body {
 	max-width: 100%;
   z-index: 12;
 }
+#stack01 {z-index: 13;}
 
 .stack img {
 	max-width: 100%;
@@ -192,8 +193,19 @@ body {
   }
 }
 
+@media (max-width: 899px) {
+  .stack-randomrot.active img:nth-child(4) {
+    -webkit-transform: translate(110%, 220%);
+  	transform: translate(110%, 220%);
+  }
+}
 
-
+@media (max-width: 599px) {
+  .stack-randomrot.active img:nth-child(4) {
+    -webkit-transform: translate(0, 330%);
+  	transform: translate(0, 330%);
+  }
+}
 
 
 .phone {
