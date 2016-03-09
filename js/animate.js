@@ -42,6 +42,10 @@ $("figure.stack").click(function(){
   $(this).toggleClass("active");
 });
 
+$(".card-modal-mike").click(function(){
+  $('#modal-mike').modal('show');
+});
+
 $(".card-modal-anisha").click(function(){
   $('#modal-anisha').modal('show');
 });
@@ -54,10 +58,6 @@ $(".card-modal-nichoal").click(function(){
   $('#modal-nichoal').modal('show');
 });
 
-$(".card-modal-laura").click(function(){
-  $('#modal-laura').modal('show');
-});
-
-$(".card-modal-jacqueline").click(function(){
-  $('#modal-jacqueline').modal('show');
+$(".card-modal-kendra").click(function(){
+  $('#modal-kendra').modal('show');
 });
