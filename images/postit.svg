@@ -1,29 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="257px" height="257px" viewBox="0 0 257 257" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
-    <title>Rectangle 1 + Rectangle 1 Copy</title>
+    <title>postit</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <linearGradient x1="42.7365451%" y1="100%" x2="67.4207899%" y2="0%" id="linearGradient-1">
             <stop stop-color="#F1E965" offset="0%"></stop>
             <stop stop-color="#F9F7A4" offset="100%"></stop>
         </linearGradient>
-        <path id="path-2" d="M6.62962963,14.7528137 L239.247186,6.62962963 L247.37037,239.247186 L14.7528137,247.37037 L6.62962963,14.7528137 L6.62962963,14.7528137 Z"></path>
-        <linearGradient x1="42.7365451%" y1="100%" x2="67.4207899%" y2="0%" id="linearGradient-3">
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.427083333   0 0 0 0 0.344655013   0 0 0 0 0.0302062372  0 0 0 0.7 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path id="path-3" d="M6.62962963,14.7528137 L239.247186,6.62962963 L247.37037,239.247186 L14.7528137,247.37037 L6.62962963,14.7528137 L6.62962963,14.7528137 Z"></path>
+        <linearGradient x1="42.7365451%" y1="100%" x2="67.4207899%" y2="0%" id="linearGradient-4">
             <stop stop-color="#F7EF5E" offset="0%"></stop>
             <stop stop-color="#FEFCA7" offset="100%"></stop>
         </linearGradient>
-        <rect id="path-4" x="6.62962963" y="6.62962963" width="240.740741" height="240.740741"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.387489371   0 0 0 0 0.300606292   0 0 0 0 0.00616919038  0 0 0 0.7 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-6" x="6.62962963" y="6.62962963" width="240.740741" height="240.740741"></rect>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Rectangle-1-+-Rectangle-1-Copy" sketch:type="MSLayerGroup" transform="translate(1.000000, 0.000000)">
-            <g id="Rectangle-1">
-                <use fill="url(#linearGradient-1)" sketch:type="MSShapeGroup" transform="translate(127.000000, 127.000000) rotate(-3.000000) translate(-127.000000, -127.000000) " xlink:href="#path-2"></use>
-                <use fill-opacity="0.3" fill="none" xlink:href="#path-2"></use>
+        <g id="postit" sketch:type="MSLayerGroup" transform="translate(2.000000, 1.000000)">
+            <g id="Rectangle-1" filter="url(#filter-2)">
+                <use fill="url(#linearGradient-1)" sketch:type="MSShapeGroup" transform="translate(127.000000, 127.000000) rotate(-3.000000) translate(-127.000000, -127.000000) " xlink:href="#path-3"></use>
+                <use fill-opacity="0.3" fill="none" xlink:href="#path-3"></use>
             </g>
-            <g id="Rectangle-1-Copy">
-                <use fill="url(#linearGradient-3)" sketch:type="MSShapeGroup" xlink:href="#path-4"></use>
-                <use fill-opacity="0.3" fill="none" xlink:href="#path-4"></use>
+            <g id="Rectangle-1-Copy" filter="url(#filter-5)">
+                <use fill="url(#linearGradient-4)" sketch:type="MSShapeGroup" xlink:href="#path-6"></use>
+                <use fill-opacity="0.3" fill="none" xlink:href="#path-6"></use>
             </g>
         </g>
     </g>
