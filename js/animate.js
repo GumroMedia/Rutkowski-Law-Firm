@@ -61,3 +61,7 @@ $(".card-modal-nichoal").click(function(){
 $(".card-modal-kendra").click(function(){
   $('#modal-kendra').modal('show');
 });
+
+$("div.post-it").hover(function(){
+  $(this).toggleClass("hover");
+});
