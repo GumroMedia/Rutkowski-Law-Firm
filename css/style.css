@@ -381,18 +381,18 @@ body {
   min-height: 256px;
   text-align: center;
   font-family: 'Gloria Hallelujah', cursive;
-  color: #222;
   transition: all 0.3s;
 }
 
 .post-it p {
   position: absolute;
-  top: 40px;
-  left: 80px;
+  top: 30%;
+  left: 30%;
+  font-size: 2em;
 }
 
 .post-it a {
-  color: #222;
+  color: rgba(0,0,0,0.7);
 }
 
 .post-it.hover {
