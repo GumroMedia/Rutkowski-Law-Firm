@@ -207,6 +207,65 @@ body {
   }
 }
 
+.post-stack {
+	margin: 0px auto;
+	width: 300px;
+	padding: 0;
+	position: relative;
+	max-width: 100%;
+  z-index: 12;
+}
+
+.post-stack div {
+	max-width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 0.3s;
+  cursor: pointer;
+}
+
+.post-stack div:last-child {
+	position: relative;
+}
+
+.post-stack-randomrot.hover div:first-child {
+	-webkit-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+
+.post-stack-randomrot.hover div:nth-child(2) {
+	-webkit-transform: rotate(10deg);
+	transform: rotate(10deg);
+}
+
+.post-stack-randomrot.hover div:last-child {
+  -webkit-transform: rotate(20deg);
+	transform: rotate(20deg);
+}
+
+.post-stack-randomrot.hover div:nth-child(3) {
+	-webkit-transform: translate(-15px,15px);
+	transform: translate(-15px,15px);
+  -webkit-transform: rotate(5deg);
+	transform: rotate(5deg);
+}
+
+.post-stack-randomrot.active div:nth-child(2) {
+  -webkit-transform: translate(110%,0px);
+	transform: translate(110%,0px);
+}
+
+.post-stack-randomrot.active div:nth-child(3) {
+  -webkit-transform: translate(220%,0px);
+	transform: translate(220%,0px);
+}
+
+.post-stack-randomrot.active div:nth-child(4) {
+  -webkit-transform: translate(330%,0px);
+	transform: translate(330%,0px);
+}
+
 
 .phone {
     background-image: url(../images/iPhone.png);
