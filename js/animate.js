@@ -39,8 +39,16 @@ $("figure.stack").hover(function(){
   $(this).toggleClass("hover");
 });
 
-$("figure.stack").click(function(){
+$("#stack01").click(function(){
   $(this).toggleClass("active");
+  $("figure.post-stack").removeClass("active");
+  $("#stack02").removeClass("active");
+});
+
+$("#stack02").click(function(){
+  $(this).toggleClass("active");
+  $("figure.post-stack").removeClass("active");
+  $("#stack01").removeClass("active");
 });
 
 $("figure.post-stack").hover(function(){
@@ -49,6 +57,7 @@ $("figure.post-stack").hover(function(){
 
 $("figure.post-stack").click(function(){
   $(this).toggleClass("active");
+  $("figure.stack").removeClass("active");
 });
 
 // show modals
@@ -72,8 +81,4 @@ $(".card-modal-trisha").click(function(){
 
 $(".card-modal-kendra").click(function(){
   $('#modal-kendra').modal('show');
-});
-
-$("div.post-it").hover(function(){
-  $(this).toggleClass("hover");
 });
