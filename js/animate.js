@@ -1,3 +1,4 @@
+// coffee cup hover
 function animationHover(element, animationup, animationdown){
   element = $(element);
   element.hover(
@@ -14,9 +15,9 @@ function animationHover(element, animationup, animationdown){
     }
   );
 };
+animationHover('#coffee', 'pulseup', 'pulsedown');
 
-animationHover('#card1', 'pulseup', 'pulsedown');
-
+//iphone shake
 function animationHover2(element, animation){
   element = $(element);
   element.hover(
@@ -31,8 +32,8 @@ function animationHover2(element, animation){
     }
   );
 };
-
 animationHover2('#phone', 'shake');
+
 
 $("figure.stack").hover(function(){
   $(this).toggleClass("hover");
@@ -41,6 +42,17 @@ $("figure.stack").hover(function(){
 $("figure.stack").click(function(){
   $(this).toggleClass("active");
 });
+
+$("figure.post-stack").hover(function(){
+  $(this).toggleClass("hover");
+});
+
+$("figure.post-stack").click(function(){
+  $(this).toggleClass("active");
+});
+
+// show modals
+
 
 $(".card-modal-mike").click(function(){
   $('#modal-mike').modal('show');
