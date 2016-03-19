@@ -295,6 +295,48 @@ body {
 	transform: translate(300%,110%);
 }
 
+@media (max-width: 1470px) {
+  .post-stack-randomrot.active div:nth-child(2) {
+    -webkit-transform: translate(0px,-110%);
+  	transform: translate(0px,-110%);
+  }
+  .post-stack-randomrot.active div:nth-child(3) {
+    -webkit-transform: translate(0px,-220%);
+  	transform: translate(0px,-220%);
+  }
+  .post-stack-randomrot.active div:nth-child(4) {
+    -webkit-transform: translate(0px,-330%);
+  	transform: translate(0px,-330%);
+  }
+  .post-stack-randomrot.active div:nth-child(5) {
+    -webkit-transform: translate(100%,-110%);
+  	transform: translate(100%,-110%);
+  }
+  .post-stack-randomrot.active div:nth-child(6) {
+    -webkit-transform: translate(100%,-220%);
+  	transform: translate(100%,-220%);
+  }
+  .post-stack-randomrot.active div:nth-child(7) {
+    -webkit-transform: translate(100%,-330%);
+  	transform: translate(100%-330%);
+  }
+}
+
+@media (max-width: 899px) {
+  .post-stack-randomrot.active div:nth-child(5) {
+    -webkit-transform: translate(0px,110%);
+  	transform: translate(0px,110%);
+  }
+  .post-stack-randomrot.active div:nth-child(6) {
+    -webkit-transform: translate(0px,220%);
+  	transform: translate(0px,220%);
+  }
+  .post-stack-randomrot.active div:nth-child(7) {
+    -webkit-transform: translate(0px,330%);
+  	transform: translate(0px,330%);
+  }
+}
+
 
 .phone {
     background-image: url(../images/iPhone.png);
