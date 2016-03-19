@@ -54,8 +54,8 @@ $(".card-modal-juliana").click(function(){
   $('#modal-juliana').modal('show');
 });
 
-$(".card-modal-nichoal").click(function(){
-  $('#modal-nichoal').modal('show');
+$(".card-modal-trisha").click(function(){
+  $('#modal-trisha').modal('show');
 });
 
 $(".card-modal-kendra").click(function(){
