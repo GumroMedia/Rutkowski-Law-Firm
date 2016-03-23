@@ -309,16 +309,16 @@ body {
   	transform: translate(0px,-330%);
   }
   .post-stack-randomrot.active div:nth-child(5) {
-    -webkit-transform: translate(100%,-110%);
-  	transform: translate(100%,-110%);
+    -webkit-transform: translate(-100%,-110%);
+  	transform: translate(-100%,-110%);
   }
   .post-stack-randomrot.active div:nth-child(6) {
-    -webkit-transform: translate(100%,-220%);
-  	transform: translate(100%,-220%);
+    -webkit-transform: translate(-100%,-220%);
+  	transform: translate(-100%,-220%);
   }
   .post-stack-randomrot.active div:nth-child(7) {
-    -webkit-transform: translate(100%,-330%);
-  	transform: translate(100%-330%);
+    -webkit-transform: translate(-100%,-330%);
+  	transform: translate(-100%-330%);
   }
 }
 
@@ -511,7 +511,6 @@ body {
 }
 .post-it {
   position: relative;
-  min-height: 230px;
   text-align: center;
   font-family: 'Gloria Hallelujah', cursive;
   transition: all 0.3s;
@@ -528,6 +527,7 @@ body {
 }
 
 .post-stack .post-it img {
+  max-height: 220px;
   -webkit-box-shadow: 1px 1px 1px -1px #634D02;
   -moz-box-shadow: 1px 1px 1px -1px  #634D02;
   box-shadow: 1px 1px 1px -1px #634D02;
