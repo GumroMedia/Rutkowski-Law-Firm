@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Vinchand';
+  src:url('../fonts/VINCHAND.otf')  format('opentype'),
+      url('../fonts/VINCHAND.ttf')  format('truetype');
+}
+
 html {
   overflow-x: hidden;
 }
@@ -412,14 +418,16 @@ body {
 }
 
 .padtext {
-    padding: 108px 40px 0 50px;
-    font-family: 'Gloria Hallelujah', cursive;
+    padding: 90px 40px 0 50px;
+    font-family: 'Vinchand';
+    font-size: 1.2em;
     color: #222;
 }
 
 .padtext h4 {
     margin-bottom: 0px;
     margin-left: 20px;
+    font-size: 34px;
 }
 
 .padtext ul {
@@ -512,7 +520,8 @@ body {
 .post-it {
   position: relative;
   text-align: center;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Vinchand';
+  font-size: 1.5em;
   transition: all 0.3s;
 }
 
