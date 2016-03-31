@@ -62,6 +62,10 @@ $("figure.post-stack").click(function(){
 
 // show modals
 
+$(".modal-estate-planning").click(function(){
+  $('#modal-estate-planning').modal('show');
+})
+
 
 $(".card-modal-mike").click(function(){
   $('#modal-mike').modal('show');
