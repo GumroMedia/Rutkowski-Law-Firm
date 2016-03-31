@@ -430,9 +430,11 @@ body {
     font-size: 34px;
 }
 
-.padtext ul {
+.padtext ul,
+.padtext a {
     padding-left: 20px;
     margin-bottom: 17px;
+    font-size: 1.2em;
 }
 
 .padtext li {
