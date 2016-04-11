@@ -66,6 +66,9 @@ $(".modal-estate-planning").click(function(){
   $('#modal-estate-planning').modal('show');
 })
 
+$(".modal-business-corporate").click(function(){
+  $('#modal-business-corporate').modal('show');
+})
 
 $(".card-modal-mike").click(function(){
   $('#modal-mike').modal('show');

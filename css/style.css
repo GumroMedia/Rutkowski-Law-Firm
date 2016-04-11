@@ -444,6 +444,17 @@ body {
 .padtext li:before{ content:"-"; position:relative; left:-5px;}
 .padtext li{ text-indent:-5px; }
 
+.keytag {
+  position: absolute;
+  bottom: 90px;
+  left: 20px;
+  transition: all 0.2s ease;
+}
+.keytag:hover {
+  -webkit-transform: rotate(15deg);
+	transform: rotate(15deg);
+}
+
 .modal-open .modal,.btn:focus{
     outline:none!important;
     box-shadow: none!important;
