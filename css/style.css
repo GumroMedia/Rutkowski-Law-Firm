@@ -502,9 +502,9 @@ body {
     -webkit-flex: 0 1 auto;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: flex-start;
+    align-self: flex-start;
     }
 
 .left-container {
