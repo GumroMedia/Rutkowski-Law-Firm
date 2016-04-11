@@ -60,7 +60,7 @@ $("figure.post-stack").click(function(){
   $("figure.stack").removeClass("active");
 });
 
-// show modals
+// show postit modals
 
 $(".modal-estate-planning").click(function(){
   $('#modal-estate-planning').modal('show');
@@ -69,6 +69,24 @@ $(".modal-estate-planning").click(function(){
 $(".modal-business-corporate").click(function(){
   $('#modal-business-corporate').modal('show');
 })
+
+$(".modal-real-estate").click(function(){
+  $('#modal-real-estate').modal('show');
+})
+
+$(".modal-employment").click(function(){
+  $('#modal-employment').modal('show');
+})
+
+$(".modal-childrens-rights").click(function(){
+  $('#modal-childrens-rights').modal('show');
+})
+
+$(".modal-litigation").click(function(){
+  $('#modal-litigation').modal('show');
+})
+
+// show people modals
 
 $(".card-modal-mike").click(function(){
   $('#modal-mike').modal('show');
