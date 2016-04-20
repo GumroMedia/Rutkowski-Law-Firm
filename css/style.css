@@ -432,13 +432,15 @@ body {
 
 .padtext ul,
 .padtext a {
-    padding-left: 20px;
     margin-bottom: 17px;
-    font-size: 1.2em;
+    font-size: 1.1em;
+}
+.padtext ul {
+    padding-left: 20px;
 }
 
 .padtext li {
-    line-height: 1.43;
+    line-height: 1.08;
     list-style: none;
 }
 .padtext li:before{ content:"-"; position:relative; left:-5px;}
@@ -451,8 +453,8 @@ body {
   transition: all 0.2s ease;
 }
 .keytag:hover {
-  -webkit-transform: rotate(15deg);
-	transform: rotate(15deg);
+  -webkit-transform: rotate(13deg);
+	transform: rotate(13deg);
 }
 
 .modal-open .modal,.btn:focus{
