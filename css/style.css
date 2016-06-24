@@ -3,7 +3,12 @@
   src:url('../fonts/VINCHAND.otf')  format('opentype'),
       url('../fonts/VINCHAND.ttf')  format('truetype');
 }
-
+@font-face {
+  font-family: 'Typewriter';
+  src:url('../fonts/p22-typewriter.ttf'),
+      url('../fonts/p22_typewriter.eot'),
+      url('../fonts/p22-typewriter.woff');
+}
 html {
   overflow-x: hidden;
 }
@@ -418,16 +423,16 @@ body {
 }
 
 .padtext {
-    padding: 90px 40px 0 50px;
-    font-family: 'Vinchand';
-    font-size: 1.2em;
+    padding: 100px 40px 0 50px;
+    font-family: 'Typewriter';
+    font-size: 1em;
     color: #222;
 }
 
 .padtext h4 {
     margin-bottom: 0px;
     margin-left: 20px;
-    font-size: 34px;
+    font-size: 1.6em;
 }
 
 .padtext ul,
@@ -439,8 +444,9 @@ body {
     padding-left: 20px;
 }
 
-.padtext li {
-    line-height: 1.08;
+.padtext li,
+.padtext li a {
+    line-height: 20px;
     list-style: none;
 }
 .padtext li:before{ content:"-"; position:relative; left:-5px;}
@@ -535,8 +541,8 @@ body {
 .post-it {
   position: relative;
   text-align: center;
-  font-family: 'Vinchand';
-  font-size: 1.5em;
+  font-family: 'Typewriter';
+  font-size: 1.2em;
   transition: all 0.3s;
 }
 
